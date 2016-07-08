@@ -1,3 +1,6 @@
+# Target transpiled es5
+lib/
+
 # Logs
 logs
 *.log
