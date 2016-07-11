@@ -2,7 +2,7 @@
   "name": "start-meteor-server",
   "version": "0.1.0",
   "description": "start a meteor server from code (perfect for acceptance testing)",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "node node_modules/jasmine-es6/bin/jasmine.js"
   },
@@ -23,5 +23,10 @@
     "grunt": "^1.0.1",
     "grunt-run": "^0.6.0",
     "jasmine-es6": "^0.1.10"
+  },
+  "dependencies": {
+    "chai": "^3.5.0",
+    "psext": "0.0.4",
+    "underscore": "^1.8.3"
   }
 }
