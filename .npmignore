@@ -1,0 +1,5 @@
+# Source es6
+src/
+spec/
+.travis.yml
+Gruntfile.js
