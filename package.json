@@ -1,6 +1,6 @@
 {
   "name": "start-meteor-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "start a meteor server from code (perfect for acceptance testing)",
   "main": "lib/index.js",
   "scripts": {
