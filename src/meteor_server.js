@@ -103,7 +103,7 @@ class MeteorServer extends EventEmitter {
   hasStartedMongoDBText(buffer) {
     if (buffer.indexOf(this.options['mongodb-ready-text']) > -1) {
       this.logger.info('hasStartedMongoDBText found!');
-      this.mongodb = new MeteorMongodb(this.childProcess.child.pid);
+      this.mongodb = new MeteorMongodb(this.logger, this.childProcess.child.pid);
       this.emit('mongodb ready');
     }
   }

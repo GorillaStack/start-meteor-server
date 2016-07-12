@@ -46,7 +46,7 @@ class MeteorMongodb extends EventEmitter {
     this.killed = true;
     let attempts = 1;
     let interval = null;
-    onInterval = () => {
+    const onInterval = () => {
       if (attempts <= 40) {
         let signal = attempts < 20 ? 'SIGTERM' : 'SIGKILL';
         this.mongodChildren.forEach(mongod => {
@@ -72,8 +72,8 @@ class MeteorMongodb extends EventEmitter {
       }
     };
 
-    onInterval();
     interval = setInterval(onInterval, 100);
+    onInterval();
   }
 };
 
